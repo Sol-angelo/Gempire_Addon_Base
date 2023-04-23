@@ -1,5 +1,6 @@
 package com.gamer.crystalparadise;
 
+import com.gempire.init.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,6 +24,7 @@ public class CrystalParadise
     public CrystalParadise()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
