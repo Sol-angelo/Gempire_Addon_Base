@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "crystalparadise:item/test"
+    "layer0": "crystalparadise:item/test_gem"
   }
 }
