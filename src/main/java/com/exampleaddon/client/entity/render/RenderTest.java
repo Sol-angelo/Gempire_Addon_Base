@@ -1,7 +1,7 @@
-package com.gamer.crystalparadise.client.entity.render;
+package com.exampleaddon.client.entity.render;
 
-import com.gamer.crystalparadise.client.entity.model.ModelTest;
-import com.gamer.crystalparadise.entity.gem.entities.EntityTest;
+import com.exampleaddon.client.entity.model.ModelTest;
+import com.exampleaddon.entity.gem.entities.EntityTest;
 import com.gempire.Gempire;
 import com.gempire.client.entity.render.layers.*;
 import com.mojang.blaze3d.vertex.PoseStack;

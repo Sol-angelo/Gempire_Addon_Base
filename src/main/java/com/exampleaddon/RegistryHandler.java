@@ -1,10 +1,8 @@
-package com.gamer.crystalparadise;
+package com.exampleaddon;
 
-import com.gamer.crystalparadise.entity.ModEntities;
-import com.gamer.crystalparadise.item.ModItems;
-import com.gempire.items.ItemGem;
+import com.exampleaddon.entity.ModEntities;
+import com.exampleaddon.item.ModItems;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
 

@@ -1,4 +1,4 @@
-package com.gamer.crystalparadise.client.entity.model;
+package com.exampleaddon.client.entity.model;
 
 import com.gempire.client.entity.model.ModelGem;
 import com.gempire.entities.bases.EntityGem;

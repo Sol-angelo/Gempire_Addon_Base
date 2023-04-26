@@ -1,9 +1,8 @@
-package com.gamer.crystalparadise;
+package com.exampleaddon;
 
-import com.gamer.crystalparadise.entity.gem.entities.EntityTest;
-import com.gamer.crystalparadise.entity.ModEntities;
+import com.exampleaddon.entity.ModEntities;
+import com.exampleaddon.entity.gem.entities.EntityTest;
 import com.gempire.init.EventHandler;
-import com.gempire.items.ItemGem;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -11,19 +10,18 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(CrystalParadise.MODID)
-public class CrystalParadise
+@Mod(ExampleAddon.MODID)
+public class ExampleAddon
 {
 
-    public static final String MODID = "crystalparadise";
+    public static final String MODID = "exampleaddon";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public CrystalParadise()
+    public ExampleAddon()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

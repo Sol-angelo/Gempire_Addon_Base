@@ -1,10 +1,10 @@
-package com.gamer.crystalparadise.entity;
+package com.exampleaddon.entity;
 
-import com.gamer.crystalparadise.CrystalParadise;
-import com.gamer.crystalparadise.entity.gem.entities.EntityTest;
+import com.exampleaddon.entity.gem.entities.EntityTest;
+import com.exampleaddon.ExampleAddon;
 import com.gempire.Gempire;
 import com.gempire.init.AddonHandler;
-import com.gamer.crystalparadise.entity.gem.other.ModCruxes;
+import com.exampleaddon.entity.gem.other.ModCruxes;
 import com.gempire.systems.injection.GemConditions;
 import com.gempire.systems.injection.GemFormation;
 import net.minecraft.resources.ResourceLocation;
@@ -24,7 +24,7 @@ public class ModEntities {
             () -> EntityType.Builder.of(EntityTest::new, MobCategory.CREATURE)
                     .sized(.75f, 1.5f) // Hitbox Size
                     //Name of the gem (same as above) and where it will exist
-                    .build(new ResourceLocation(CrystalParadise.MODID, "test").toString()));
+                    .build(new ResourceLocation(ExampleAddon.MODID, "test").toString()));
 
     public static void registerCruxes() {
         //register cruxes

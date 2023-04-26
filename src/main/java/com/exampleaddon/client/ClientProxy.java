@@ -1,9 +1,9 @@
-package com.gamer.crystalparadise.client;
+package com.exampleaddon.client;
 
-import com.gamer.crystalparadise.CrystalParadise;
-import com.gamer.crystalparadise.client.entity.model.ModelTest;
-import com.gamer.crystalparadise.client.entity.render.RenderTest;
-import com.gamer.crystalparadise.entity.ModEntities;
+import com.exampleaddon.ExampleAddon;
+import com.exampleaddon.client.entity.model.ModelTest;
+import com.exampleaddon.client.entity.render.RenderTest;
+import com.exampleaddon.entity.ModEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 
 public class ClientProxy {
 
-    @Mod.EventBusSubscriber(modid = CrystalParadise.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = ExampleAddon.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModBusEvents {
 
 

@@ -1,4 +1,4 @@
-package com.gamer.crystalparadise.entity.gem.entities;
+package com.exampleaddon.entity.gem.entities;
 
 import com.gempire.entities.ai.*;
 import com.gempire.entities.bases.EntityGem;

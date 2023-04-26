@@ -1,4 +1,4 @@
-package com.gamer.crystalparadise.entity.gem.other;
+package com.exampleaddon.entity.gem.other;
 
 import com.gempire.systems.injection.Crux;
 import com.gempire.systems.injection.GemConditions;
