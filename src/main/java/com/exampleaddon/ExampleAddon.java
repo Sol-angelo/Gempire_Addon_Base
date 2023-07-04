@@ -1,6 +1,6 @@
 package com.exampleaddon;
 
-import com.exampleaddon.entity.ModEntities;
+import com.exampleaddon.entity.AddonEntities;
 import com.exampleaddon.entity.gem.entities.EntityTest;
 import com.gempire.init.EventHandler;
 import com.mojang.logging.LogUtils;
@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import java.beans.EventHandler;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ExampleAddon.MODID)
@@ -38,12 +40,12 @@ public class ExampleAddon
 
     public void EntityAttributes(final EntityAttributeCreationEvent event) {
         //register entity attributes, these are set in the EntityTestGem class
-        event.put(ModEntities.TEST.get(), EntityTest.registerAttributes().build());
+        event.put(AddonEntities.TEST.get(), EntityTest.registerAttributes().build());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        ModEntities.setAddonGems();
-        ModEntities.registerCruxes();
+        AddonEntities.setAddonGems();
+        AddonEntities.registerCruxes();
     }
 }

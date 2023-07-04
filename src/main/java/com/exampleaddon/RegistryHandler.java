@@ -1,14 +1,14 @@
 package com.exampleaddon;
 
-import com.exampleaddon.entity.ModEntities;
-import com.exampleaddon.item.ModItems;
+import com.exampleaddon.entity.AddonEntities;
+import com.exampleaddon.item.AddonItems;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 public class RegistryHandler {
 
     public static void init() {
-        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        ModEntities.ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        AddonItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        AddonEntities.ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
 

@@ -16,7 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.HashMap;
 
-public class ModEntities {
+public class AddonEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Gempire.MODID);
     public static HashMap<String, GemConditions> CRUXTOGEM = new HashMap<>();
 
@@ -28,7 +28,7 @@ public class ModEntities {
 
     public static void registerCruxes() {
         //register cruxes
-        ModEntities.CRUXTOGEM.put("test", ModCruxes.TEST_CONDITIONS());
+        AddonEntities.CRUXTOGEM.put("test", ModCruxes.TEST_CONDITIONS());
         //possible to be injected with tier one (can be both)
         GemFormation.POSSIBLE_GEMS_TIER_1.add("test");
         //possible to be injected with tier two (can be both)
