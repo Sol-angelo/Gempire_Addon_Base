@@ -1,13 +1,16 @@
 package com.exampleaddon.entity.gem.abilities;
 
+import com.gempire.entities.abilities.base.Ability;
+import com.gempire.entities.abilities.interfaces.IAttributeAbility;
+import com.exampleaddon.entity.gem.abilities.AddonAbilities;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 
-public class AttributeAbility extends Ability implements IAttributeAbility{
+public class AttributeAbility extends Ability implements IAttributeAbility {
 
     public AttributeAbility(){
-        this.ability = Abilities.ATTRIBUTE_TEST;
+        this.ability = AddonAbilities.ATTRIBUTE_TEST;
     }
 
     @Override

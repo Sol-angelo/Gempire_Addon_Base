@@ -45,6 +45,31 @@ public class EntityTest extends EntityGem {
     }
 
     @Override
+    public Float baseXScale() {
+        return 1F;
+    }
+
+    @Override
+    public Float baseYScale() {
+        return 1F;
+    }
+
+    @Override
+    public Float baseZScale() {
+        return 1F;
+    }
+
+    @Override
+    public int generateHardness() {
+        return 4;
+    }
+
+    @Override
+    public int getColor() {
+        return 0;
+    }
+
+    @Override
     public int generateSkinVariant() {
         return 0;
     }
@@ -60,15 +85,33 @@ public class EntityTest extends EntityGem {
 
     @Override
     public int generateHairVariant() {
-        return this.random.nextInt(1);    }
+        return this.random.nextInt(1);
+    }
+
+    @Override
+    public int exitHoleSize() {
+        return 0;
+    }
 
     @Override
     public int generateOutfitVariant() {
-        return this.random.nextInt(1);    }
+        return this.random.nextInt(1);
+    }
 
     @Override
     public int generateInsigniaVariant() {
-        return this.random.nextInt(1);    }
+        return this.getOutfitVariant();
+    }
+
+    @Override
+    public int generateRebelInsigniaVariant() {
+        return this.getRebelOutfitVariant();
+    }
+
+    @Override
+    public int generateVisorVariant() {
+        return 0;
+    }
 
     @Override
     public int generateSkinColorVariant() {

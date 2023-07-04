@@ -1,4 +1,7 @@
 package com.exampleaddon.entity.gem.abilities;
 
-public class IdleAbility extends Ability implements IIdleAbility{
+import com.gempire.entities.abilities.base.Ability;
+import com.gempire.entities.abilities.interfaces.IIdleAbility;
+
+public class IdleAbility extends Ability implements IIdleAbility {
 }

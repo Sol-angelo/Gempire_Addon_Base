@@ -1,12 +1,15 @@
 package com.exampleaddon.entity.gem.abilities;
 
+import com.gempire.entities.abilities.base.Ability;
+import com.gempire.entities.abilities.interfaces.ICraftingAbility;
+import com.gempire.init.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Items;
 
 public class CraftingAbility extends Ability implements ICraftingAbility {
 
     public CraftingAbility(){
-        this.ability = Abilities.CRAFTING_TEST;
+        this.ability = AddonAbilities.CRAFTING_TEST;
     }
 
     @Override
@@ -21,16 +24,12 @@ public class CraftingAbility extends Ability implements ICraftingAbility {
         //for example here stone would make a pedestal,
         // and a sludge glob would have a 75% chance of making a random chroma colour
 
-        //defines what item in inputted
         //recipe 1
         input.add(Items.STONE);
+        output.add(ModItems.PEDISTAL.get());
+
         //recipe 2
         input.add(ModItems.SLUDGE_GLOB.get());
-
-        //defines what item in outputted
-        //recipe 1
-        output.add(ModItems.PEDISTAL.get());
-        //recipe 2
         int n = random.nextInt(16);
         int m = random.nextInt(4);
         switch (m) {
