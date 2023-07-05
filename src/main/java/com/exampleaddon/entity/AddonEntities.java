@@ -37,7 +37,7 @@ public class AddonEntities {
 
     public static void setAddonGems(){
         //registers entity as a gem
-        AddonHandler.VANILLA_GEMS.add("test");
+        AddonHandler.ENTITY_ADDON_ENTITY_REGISTRIES.put("test", EntityTest.class);
         AddonHandler.ADDON_ENTITY_REGISTRIES.put("test", EntityTest.class);
     }
 }

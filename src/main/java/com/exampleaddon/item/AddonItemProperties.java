@@ -4,6 +4,6 @@ import com.gempire.init.ModItemProperties;
 
 public class AddonItemProperties {
     public static void addCustomItemProperties() {
-        ModItemProperties.makeGem(AddonItems.TEST_GEM.get());
+        //ModItemProperties.makeGem(AddonItems.TEST_GEM.get());
     }
 }

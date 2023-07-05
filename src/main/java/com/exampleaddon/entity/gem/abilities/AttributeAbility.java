@@ -9,9 +9,9 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class AttributeAbility extends Ability implements IAttributeAbility {
 
-    public AttributeAbility(){
+    /*public AttributeAbility(){
         this.ability = AddonAbilities.ATTRIBUTE_TEST;
-    }
+    }*/
 
     @Override
     public Attribute attribute() {

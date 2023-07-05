@@ -8,9 +8,9 @@ import net.minecraft.world.item.Items;
 
 public class CraftingAbility extends Ability implements ICraftingAbility {
 
-    public CraftingAbility(){
+    /*public CraftingAbility(){
         this.ability = AddonAbilities.CRAFTING_TEST;
-    }
+    }*/
 
     @Override
     public int recipeAmount() {

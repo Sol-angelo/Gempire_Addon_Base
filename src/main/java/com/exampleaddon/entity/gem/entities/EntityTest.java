@@ -4,6 +4,7 @@ import com.gempire.entities.ai.*;
 import com.gempire.entities.bases.EntityGem;
 import com.gempire.util.Abilities;
 import com.gempire.util.GemPlacements;
+import com.gempire.util.GempireAbilities;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
@@ -144,16 +145,16 @@ public class EntityTest extends EntityGem {
     }
 
     @Override
-    public Abilities[] possibleAbilities() {
-        return new Abilities[] {
-                Abilities.NO_ABILITY, Abilities.HYDROKINESIS, Abilities.LUCK
+    public GempireAbilities[] possibleAbilities() {
+        return new GempireAbilities[] {
+                GempireAbilities.NO_ABILITY, GempireAbilities.HYDROKINESIS, GempireAbilities.LUCK
         };
     }
 
     @Override
-    public Abilities[] definiteAbilities() {
-        return new Abilities[] {
-                Abilities.TECHNICIAN
+    public GempireAbilities[] definiteAbilities() {
+        return new GempireAbilities[] {
+                GempireAbilities.TECHNICIAN
         };
     }
 }
