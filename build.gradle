@@ -173,7 +173,7 @@ dependencies {
     //compileOnly fg.deobf("curse.maven:gempire-427613:4500339")
     //runtimeOnly fg.deobf("curse.maven:gempire-427613:4500339")
 
-    implementation fg.deobf("blank:gempire-2.1_1.19.4:gempire-2.1_1.19.4.jar")
+    implementation fg.deobf("blank:gempire-2.1:gempire-2.1.jar")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

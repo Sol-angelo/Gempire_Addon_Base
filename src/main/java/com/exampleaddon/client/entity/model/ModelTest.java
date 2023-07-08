@@ -10,9 +10,10 @@ import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.HumanoidArm;
 
 public class ModelTest<T extends EntityGem> extends ModelGem<T> {
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("gempire", "ruby"), "main");
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("exampleaddon", "test"), "main");
     public ModelPart head;
     public ModelPart body;
     public ModelPart armr;
@@ -62,5 +63,10 @@ public class ModelTest<T extends EntityGem> extends ModelGem<T> {
         modelRenderer.xRot = x;
         modelRenderer.yRot = y;
         modelRenderer.zRot = z;
+    }
+
+    @Override
+    public ModelPart getArm(HumanoidArm p_102852_) {
+        return p_102852_ == HumanoidArm.LEFT ? this.arml : this.armr;
     }
 }

@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "exampleaddon:item/varytest_gem_6"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "gempire:gempredicate": 0.1
+      },
+      "model": "exampleaddon:item/varytest_gem_6_sludge"
+    },
+    {
+      "predicate": {
+        "gempire:gempredicate": 0.2
+      },
+      "model": "exampleaddon:item/varytest_gem_6_cracked"
+    },
+    {
+      "predicate": {
+        "gempire:gempredicate": 1.0
+      },
+      "model": "exampleaddon:item/varytest_gem_6_perfect"
+    }
+  ]
+}

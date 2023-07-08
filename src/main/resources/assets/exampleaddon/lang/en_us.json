@@ -1,4 +1,17 @@
 {
-  "item.exampleaddon.test": "Test",
-  "item.exampleaddon.test_gem": "Test Gem"
+  "item.exampleaddon.varytest_gem_0": "White VaryTest Gem",
+  "item.exampleaddon.varytest_gem_4": "Yellow VaryTest Gem",
+  "item.exampleaddon.varytest_gem_6": "Pink VaryTest Gem",
+  "item.exampleaddon.varytest_gem_11": "Blue VaryTest Gem",
+  "item.exampleaddon.test_gem": "Test Gem",
+
+  "entity.gempire.varytest": "VaryTest",
+  "entity.gempire.test": "Test",
+
+  "ability.exampleaddon.attribute_test": "Attribute Test",
+  "ability.exampleaddon.crafting_test": "Crafting Test",
+  "ability.exampleaddon.effect_test": "Effect Test",
+  "ability.exampleaddon.melee_test": "Melee Test",
+  "ability.exampleaddon.idle_test": "Idle Test",
+  "ability.exampleaddon.mixed_test": "Mixed Test"
 }

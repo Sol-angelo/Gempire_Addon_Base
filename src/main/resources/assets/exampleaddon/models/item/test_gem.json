@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "exampleaddon:item/test_gem"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "gempire:gempredicate": 0.1
+      },
+      "model": "exampleaddon:item/test_gem_sludge"
+    },
+    {
+      "predicate": {
+        "gempire:gempredicate": 0.2
+      },
+      "model": "exampleaddon:item/test_gem_cracked"
+    },
+    {
+      "predicate": {
+        "gempire:gempredicate": 1.0
+      },
+      "model": "exampleaddon:item/test_gem_perfect"
+    }
+  ]
 }
