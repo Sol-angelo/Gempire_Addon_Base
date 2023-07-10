@@ -19,8 +19,6 @@ import java.util.HashMap;
 
 public class AddonEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Gempire.MODID);
-    public static HashMap<String, GemConditions> CRUXTOGEM = new HashMap<>();
-
     public static final RegistryObject<EntityType<EntityTest>> TEST = ENTITIES.register("test",
             () -> EntityType.Builder.of(EntityTest::new, MobCategory.CREATURE)
                     .sized(.75f, 1.5f) // Hitbox Size
@@ -34,8 +32,8 @@ public class AddonEntities {
 
     public static void registerCruxes() {
         //register cruxes
-        AddonEntities.CRUXTOGEM.put("test", AddonCruxes.TEST_CONDITIONS());
-        AddonEntities.CRUXTOGEM.put("varytest", AddonCruxes.VARYTEST_CONDITIONS());
+        ModEntities.CRUXTOGEM.put("test", AddonCruxes.TEST_CONDITIONS());
+        ModEntities.CRUXTOGEM.put("varytest", AddonCruxes.VARYTEST_CONDITIONS());
         //possible to be injected with tier one (can be both)
         GemFormation.POSSIBLE_GEMS_TIER_1.add("test");
         //possible to be injected with tier two (can be both)
