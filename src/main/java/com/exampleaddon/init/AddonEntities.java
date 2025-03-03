@@ -32,32 +32,34 @@ public class AddonEntities {
                     .build(new ResourceLocation(ExampleAddon.MODID, "varytest").toString()));
 
     public static void registerCruxes() {
-        //register cruxes
-        /*ModEntities.CRUXTOGEM.put("test", AddonCruxes.TEST_CONDITIONS());
-        ModEntities.CRUXTOGEM.put("varytest", AddonCruxes.VARYTEST_CONDITIONS());
-        //possible to be injected with tier one (can be both)
-        GemFormation.POSSIBLE_GEMS_TIER_1.add("test");
-        //possible to be injected with tier two (can be both)
-        GemFormation.POSSIBLE_GEMS_TIER_2.add("test");
-        GemFormation.POSSIBLE_GEMS_TIER_2.add("varytest");*/
+
     }
 
     public static void setAddonGems(){
-        //registers entity as a gem
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(1);
-        HashMap<Item, Integer> map = new HashMap<>();
-        map.put(Items.ACACIA_FENCE, 1);
-        map.put(Items.HONEYCOMB, 4);
+        ArrayList<Integer> testEssences = new ArrayList<>();
+        //set 2 essences required for incubation (numbers 0-3)
+        testEssences.add(1);
+        testEssences.add(1);
+        HashMap<Item, Integer> testCruxes = new HashMap<>();
+        //add crux items to gem - 1 is least wanted 4 is most wanted
+        testCruxes.put(Items.ACACIA_FENCE, 1);
+        testCruxes.put(Items.HONEYCOMB, 4);
 
-        AddonHandler.addon.put("test", true);
+        ArrayList<Integer> varyTestEssences = new ArrayList<>();
+        //set 2 essences required for incubation (numbers 0-3)
+        varyTestEssences.add(0);
+        varyTestEssences.add(3);
+
+        HashMap<Item, Integer> varyTestCruxes = new HashMap<>();
+        //add crux items to gem - 1 is least wanted 4 is most wanted
+        varyTestCruxes.put(Items.END_CRYSTAL, 1);
+        varyTestCruxes.put(Items.CLAY_BALL, 4);
+
+
         AddonHandler.createIncubatedAddonGem("test", AddonItems.TEST_GEM.get(),
-                AddonEntities.class, AddonItems.class, false, 50, list, map, false);
-        AddonHandler.ENTITY_ADDON_ENTITY_REGISTRIES.put("test", AddonEntities.class);
-        AddonHandler.ENTITY_ADDON_ITEM_REGISTRIES.put("test", AddonItems.class);
-        AddonHandler.ENTITY_ADDON_ENTITY_REGISTRIES.put("varytest", AddonEntities.class);
+                AddonEntities.class, AddonItems.class, false, 50, testEssences, testCruxes, false);
 
-        //AddonHandler.ADDON_ENTITY_REGISTRIES.put("exampleaddon", AddonEntities.class);
+        AddonHandler.createIncubatedAddonGem("varytest", AddonItems.TEST_GEM.get(),
+                AddonEntities.class, AddonItems.class, true, 50, varyTestEssences, varyTestCruxes, false);
     }
 }
