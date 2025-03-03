@@ -18,12 +18,12 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-import static com.gempire.proxy.ClientProxy.GEMPIRE_GEMSTONES;
+import static com.gempire.init.ModCreativeModeTabs.GEMPIRE_GEMSTONES;
 
 public class ClientProxy {
 
@@ -52,32 +52,14 @@ public class ClientProxy {
         }
 
 
-        //------THIS ADDS YOUR OWN CREATIVE MODE TAB-------
-
-        @SubscribeEvent
-        public static void buildContents(CreativeModeTabEvent.Register event) {
-            ADDON_TAB = event.registerCreativeModeTab(new ResourceLocation(ExampleAddon.MODID, "items"),
-                    builder -> builder.title(Component.translatable("itemGroup.items"))
-                            // Set icon of creative tab
-                            .icon(() -> new ItemStack(AddonItems.WHITE_VARYTEST_GEM.get()))
-                            .displayItems((params, populator) -> {
-                                populator.accept(AddonItems.WHITE_VARYTEST_GEM.get());
-                                populator.accept(AddonItems.PINK_VARYTEST_GEM.get());
-                                populator.accept(AddonItems.YELLOW_VARYTEST_GEM.get());
-                                populator.accept(AddonItems.BLUE_VARYTEST_GEM.get());
-                                populator.accept(AddonItems.TEST_GEM.get());
-                            })
-                            .build());
-        }
-
         //-----THIS ADDS YOUR ITEMS TO GEMPIRES GEMSTONES TAB------
 
-        /*@SubscribeEvent
-        public void buildContents(CreativeModeTabEvent.BuildContents event) {
-            if (event.getTab() == GEMPIRE_GEMSTONES) {
+        @SubscribeEvent
+        public static void buildContents(BuildCreativeModeTabContentsEvent event) {
+            if (event.getTab() == GEMPIRE_GEMSTONES.get()) {
                 event.accept(AddonItems.BLUE_VARYTEST_GEM.get());
                 event.accept(AddonItems.WHITE_VARYTEST_GEM.get());
             }
-        }*/
+        }
     }
 }

@@ -24,7 +24,7 @@ public class EffectAbility extends Ability implements IEffectAbility {
         // the id should be in a new 100s digit depending on your addon
         // this prevents compat issues
         // the weight is what determines how likely gems are to have the ability
-        super(105, 5);
+        super("effect", 5);
     }
 
     @Override

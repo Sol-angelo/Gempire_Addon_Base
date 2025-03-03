@@ -15,13 +15,7 @@ public class CraftingAbility extends Ability implements ICraftingAbility {
         // the id should be in a new 100s digit depending on your addon
         // this prevents compat issues
         // the weight is what determines how likely gems are to have the ability
-        super(100, 5);
-    }
-
-    @Override
-    public int recipeAmount() {
-        //amount of recipes added by this ability
-        return 1;
+        super("crafting", 5);
     }
 
     @Override

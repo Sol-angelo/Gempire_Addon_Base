@@ -14,7 +14,7 @@ public class AttributeAbility extends Ability implements IAttributeAbility {
         // the id should be in a new 100s digit depending on your addon
         // this prevents compat issues
         // the weight is what determines how likely gems are to have the ability
-        super(101,5);
+        super("attribute",5);
     }
 
     @Override

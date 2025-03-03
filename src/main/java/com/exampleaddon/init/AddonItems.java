@@ -3,6 +3,7 @@ package com.exampleaddon.init;
 import com.exampleaddon.ExampleAddon;
 import com.gempire.Gempire;
 import com.gempire.items.ItemGem;
+import com.gempire.items.ItemGemBase;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,6 +15,8 @@ public class AddonItems {
      public static final RegistryObject<Item> TEST_GEM = ITEMS.register("test_gem", () ->
              new ItemGem(new Item.Properties(), ExampleAddon.MODID));
 
+     public static final RegistryObject<Item> INACTIVE_TEST_BASE = ITEMS.register("inactive_test_base", () ->
+             new ItemGemBase(new Item.Properties()));
      public static final RegistryObject<Item> WHITE_VARYTEST_GEM = ITEMS.register("varytest_gem_0", () ->
              new ItemGem(new Item.Properties(), ExampleAddon.MODID));
      public static final RegistryObject<Item> YELLOW_VARYTEST_GEM = ITEMS.register("varytest_gem_4", () ->

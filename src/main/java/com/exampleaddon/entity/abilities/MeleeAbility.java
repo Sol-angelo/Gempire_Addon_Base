@@ -14,7 +14,7 @@ public class MeleeAbility extends Ability implements IMeleeAbility {
         // the id should be in a new 100s digit depending on your addon
         // this prevents compat issues
         // the weight is what determines how likely gems are to have the ability
-        super(104, 6);
+        super("melee", 6);
     }
 
     @Override

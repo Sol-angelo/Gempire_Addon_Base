@@ -26,7 +26,7 @@ public class MixedAbility extends Ability implements IMeleeAbility, IEffectAbili
         // the id should be in a new 100s digit depending on your addon
         // this prevents compat issues
         // the weight is what determines how likely gems are to have the ability
-        super(103, 5);
+        super("mixed", 5);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class MixedAbility extends Ability implements IMeleeAbility, IEffectAbili
 
     @Override
     public void outburst() {
-        List<PathfinderMob> entities = this.holder.level.<PathfinderMob>getEntitiesOfClass(PathfinderMob.class, this.holder.getBoundingBox().inflate(20.0D, 10.0D, 20.0D));
+        List<PathfinderMob> entities = this.holder.level().<PathfinderMob>getEntitiesOfClass(PathfinderMob.class, this.holder.getBoundingBox().inflate(20.0D, 10.0D, 20.0D));
         for(PathfinderMob entity : entities){
             if(entity instanceof EntityGem || this.holder.isOwner(entity.getUUID())){
                 continue;

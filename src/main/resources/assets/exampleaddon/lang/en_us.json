@@ -8,6 +8,8 @@
   "entity.gempire.varytest": "VaryTest",
   "entity.gempire.test": "Test",
 
+  "itemGroup.addon_tab": "Example Addon Tab",
+
   "ability.exampleaddon.attribute_test": "Attribute Test",
   "ability.exampleaddon.crafting_test": "Crafting Test",
   "ability.exampleaddon.effect_test": "Effect Test",

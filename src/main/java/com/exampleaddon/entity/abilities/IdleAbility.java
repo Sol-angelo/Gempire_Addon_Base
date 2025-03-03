@@ -12,7 +12,7 @@ public class IdleAbility extends Ability implements IIdleAbility {
         // the id should be in a new 100s digit depending on your addon
         // this prevents compat issues
         // the weight is what determines how likely gems are to have the ability
-        super(102,5);
+        super("idle",5);
     }
 
     @Override
